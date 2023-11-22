@@ -66,3 +66,7 @@ This plugin uses multiple techniques to either reduce the number of instructions
 You can read more about the plugins capabilities by going through the individual parameters.
 
 <!--@include: ../parts/plugin.md-->
+
+## Implementation
+
+https://github.com/svg/svgo/blob/main/plugins/convertPathData.js
