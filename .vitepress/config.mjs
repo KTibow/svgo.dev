@@ -1,0 +1,51 @@
+import { defineConfig } from "vitepress";
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: "SVGO",
+  description:
+    "A Node.js library and command-line application to optimize vectors",
+  base: process.env.CI ? "/svgo.dev/" : "/",
+  srcDir: "src",
+  srcExclude: ["parts/*.md"],
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    logo: {
+      light: "/logo-light.svg",
+      dark: "/logo-dark.svg",
+      alt: "SVGO",
+    },
+    siteTitle: false,
+    search: {
+      provider: "local",
+    },
+
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "Guide", link: "/guide" },
+    ],
+
+    sidebar: [
+      {
+        text: "Reference",
+        items: [
+          { text: "Getting Started", link: "/guide" },
+          {
+            text: "Plugins",
+            link: "/preset-default",
+            items: [
+              { text: "Convert Path Data", link: "/plugins/convert-path-data" },
+              { text: "Merge Paths", link: "/plugins/merge-paths" },
+            ],
+          },
+          { text: "Plugins Architecture", link: "/plugins-api" },
+        ],
+      },
+    ],
+
+    socialLinks: [
+      { icon: "github", link: "https://github.com/svg/svgo" },
+      { icon: "discord", link: "https://discord.com/invite/z8jX8NYxrE" },
+    ],
+  },
+});
