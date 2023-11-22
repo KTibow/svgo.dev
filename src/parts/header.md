@@ -7,3 +7,11 @@
 </script>
 
 # {{ data.title }} <Badge v-if="data.default" type="tip" text="Default" />
+
+<style module>
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+</style>

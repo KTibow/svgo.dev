@@ -31,11 +31,3 @@ module.exports = {
 ## Demo
 
 <PluginDemo :plugin="data.id" />
-
-<style module>
-h1 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-</style>
