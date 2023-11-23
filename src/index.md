@@ -1,6 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+titleTemplate: A library to optimize vectors
 
 hero:
   name: "SVGO"
