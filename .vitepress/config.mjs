@@ -25,6 +25,7 @@ export default defineConfig({
       { text: "Guide", link: "/guide" },
     ],
 
+    outline: "deep",
     sidebar: [
       {
         text: "Reference",
