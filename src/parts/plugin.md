@@ -6,6 +6,8 @@ module.exports = {
 };
 ```
 
+<div v-if="data.parameters">
+
 ### Parameters
 
 <Parameters :items="data.parameters" />
@@ -19,7 +21,7 @@ module.exports = {
     {
       name: "{{ data.id }}",
       params: {
-{{Object.entries(data.parameters).filter(([k, v]) => v.default !== undefined).map(([k, v]) => `        ${k}: ${JSON.stringify(v.default)}`).join(",\n")}}
+{{Object.entries(data.parameters).filter(([k, v]) => v?.default !== undefined).map(([k, v]) => `        ${k}: ${JSON.stringify(v.default)}`).join(",\n")}}
       }
     }
   ]
@@ -27,6 +29,8 @@ module.exports = {
 ```
 
 </details>
+
+</div>
 
 ## Demo
 

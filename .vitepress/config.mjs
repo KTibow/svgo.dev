@@ -34,8 +34,35 @@ export default defineConfig({
             text: "Plugins",
             link: "/preset-default",
             items: [
+              {
+                text: "Add Attributes to Elements",
+                link: "/plugins/add-attributes-to-svg-element",
+              },
+              {
+                text: "Add Classes to Elements",
+                link: "/plugins/add-classes-to-svg-element",
+              },
+              {
+                text: "Cleanup Attributes",
+                link: "/plugins/cleanup-attrs",
+              },
               { text: "Convert Path Data", link: "/plugins/convert-path-data" },
               { text: "Merge Paths", link: "/plugins/merge-paths" },
+              { text: "Remove XLink", link: "/plugins/remove-xlink" },
+              {
+                text: "Remove XML Declaration",
+                link: "/plugins/remove-xml-proc-inst",
+              },
+              {
+                text: "Remove XML Namespace",
+                link: "/plugins/remove-xmlns",
+              },
+              { text: "Reuse Paths", link: "/plugins/reuse-paths" },
+              { text: "Sort Attributes", link: "/plugins/sort-attrs" },
+              {
+                text: "Sort Defs Children",
+                link: "/plugins/sort-defs-children",
+              },
             ],
           },
           { text: "Plugins Architecture", link: "/plugins-api" },

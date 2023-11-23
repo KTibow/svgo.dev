@@ -4,7 +4,7 @@ import { computed } from "vue";
 const props = defineProps({ items: Object });
 const items = computed(() =>
   Object.fromEntries(
-    Object.entries(props.items).filter(([k, v]) => v.description)
+    Object.entries(props.items).filter(([k, v]) => v?.description)
   )
 );
 </script>
