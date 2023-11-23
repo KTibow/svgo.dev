@@ -11,7 +11,7 @@ It's recommended to use this plugin if you intend to inline SVGs into an HTML do
 
 :::tip
 
-This plugin pairs well with the [Remove XLink](/docs/plugins/remove-xlink/) plugin. Remove XLink drops XLink namespaces and migrates references to them to the modern equivalent, supported by SVG 2 and inline an HTML document. When using this, it's recommended to enable Remove XLink too.
+This plugin pairs well with the [Remove XLink](/plugins/remove-xlink) plugin. Remove XLink drops XLink namespaces and migrates references to them to the modern equivalent, supported by SVG 2 and inline an HTML document. When using this, it's recommended to enable Remove XLink too.
 
 :::
 
